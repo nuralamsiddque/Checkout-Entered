@@ -1,0 +1,99 @@
+/* // XX-Large devices (large desktops, less than 2560px) */
+
+@media (min-width: 2559px) {
+    .checkout_form .buttom_section {
+        left: 215px;
+        width: 2000px;
+    }
+}
+
+
+/* // X-Large devices (large desktops, less than 1400px) */
+
+@media (max-width: 1399.98px) {}
+
+
+/* // Large devices (desktops, less than 1200px) */
+
+@media (max-width: 1199.98px) {
+    .profile {
+        margin-right: 20px;
+    }
+}
+
+
+/* // Medium devices (tablets, less than 992px) */
+
+@media (max-width: 991.98px) {
+    .profile {
+        margin-right: 20px;
+    }
+}
+
+
+/* // Small devices (landscape phones, less than 768px) */
+
+@media (max-width: 767.98px) {
+    .text-sm-center {
+        text-align: center;
+    }
+    .checkout_form .padding_lefts {
+        padding-left: 20px;
+    }
+    .checkout_form .preview {
+        margin-bottom: 20px;
+    }
+    .checkout_form .form_inner_sec .pt_buttom {
+        padding-top: 0rem;
+    }
+    .checkout_form .form_inner_sec label {
+        padding-top: 10px;
+    }
+    .checkout_form .form_inner_sec .person_nfo {
+        margin-top: 18px;
+        text-align: end;
+    }
+    .checkout_form .pragaraph_text {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .text-sm-center {
+        text-align: center;
+    }
+    .small_fex {
+        flex-direction: column;
+    }
+    .profile {
+        text-align: end;
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 425px) {
+    .small_fex {
+        flex-direction: column;
+    }
+    .checkout_form {
+        padding-bottom: 264px;
+    }
+    .text-sm-center {
+        text-align: center;
+    }
+}
+
+@media (max-width: 375px) {
+    .text-sm-center {
+        text-align: center;
+    }
+}
+
+@media (max-width: 320px) {
+    .small_fex {
+        flex-direction: column;
+    }
+    .text-sm-center {
+        text-align: center;
+    }
+}

@@ -1,0 +1,417 @@
+/* custom_font */
+
+@font-face {
+    font-family: "Mont";
+    font-style: normal;
+    font-weight: bold;
+    src: url('assets/fonts/FontfabricMontBold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: "Mont";
+    font-style: normal;
+    font-weight: normal;
+    src: url('assets/fonts/FontfabricMontRegular.woff2') format('woff2');
+}
+
+ :root {
+    --primery: #b12a27;
+    --bg-bk: #212121;
+    --bg-color: #F6F9F9;
+    --tx-primery: #b12a27;
+    --h-tx-color: #0d0d0d;
+    --border-color: #707070;
+    --snd-brd-color: #DCE3E3;
+    --white-color: #fff !important;
+    /* fontsize */
+    --hading-f-size: 2rem;
+    --second-h-fz: 22px;
+    --small-fz: 14px;
+    --paragraph-fz: 1rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 20px;
+    line-height: 1.2;
+    letter-spacing: 0.8;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+a:focus {
+    outline: none;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    outline: 0;
+}
+
+a img {
+    border: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+select {
+    max-width: 100%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.padding_t_b {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.border_bottom {
+    width: 60px;
+    height: 4px;
+    background-color: var(--h-tx-color);
+    position: relative;
+    border-radius: 4px;
+}
+
+.border_bottom:before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 4px;
+    background-color: var(--h-tx-color);
+    left: 115%;
+    top: 0px;
+    border-radius: 4px;
+}
+
+body {
+    font-family: 'Mont', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #929292;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    position: relative;
+}
+
+
+/*  header  */
+
+.top_heading {
+    color: var(--h-tx-color);
+}
+
+.main_menu {}
+
+.main_menu .nav_menu_item {
+    background-color: var(--white-color);
+    z-index: 9999999999999999;
+}
+
+.main_menu .logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.main_menu .nav_menu_item .nav-item a.nav-link {
+    color: var(--white-color);
+    font-size: var(--small-fz);
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 12px 20px !important;
+}
+
+.main_menu .nav_menu_item .nav-item {
+    position: relative;
+    background-color: var(--bg-bk);
+}
+
+.main_menu .nav_menu_item li .nav-link:hover,
+.main_menu .active {
+    background-color: #b12a27 !important;
+}
+
+.main_menu button.navbar-toggler:focus {
+    box-shadow: none;
+    border: 2px solid #ffffff80 !important;
+}
+
+
+/* Dropdown Menu */
+
+.main_menu .nav_menu_item li:hover>.dropdown_menu {
+    top: 100%;
+    z-index: -1;
+    transition: all 0.6s 0.2s ease;
+}
+
+.main_menu .dropdown_menu {
+    position: absolute;
+    top: -500%;
+    z-index: -999999 !important;
+    background-color: var(--bg-bk);
+}
+
+.main_menu .dropdown_menu li .dropdown-item {
+    padding: 6px 25px;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    color: var(--white-color);
+    font-weight: bold;
+    text-transform: uppercase;
+    z-index: -999999;
+    display: block;
+}
+
+.main_menu .dropdown_menu li a.dropdown-item:hover {
+    background-color: var(--primery);
+}
+
+
+/* Dropdown Menu end */
+
+
+/* header end */
+
+
+/* Checkout – Entered – 2  */
+
+.checkout_form {
+    background-color: var(--bg-color);
+    position: relative;
+    padding-bottom: 200px;
+}
+
+.checkout_form .pragaraph_text {
+    color: var(--h-tx-color);
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: 0.6px;
+}
+
+.checkout_form .form_inner_sec {
+    padding: 20px;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 10%);
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.checkout_form .form_inner_sec input,
+.checkout_form .form_inner_sec select {
+    border: 1px solid var(--snd-brd-color);
+    padding: 10px 20px;
+}
+
+.checkout_form .form_inner_sec input,
+.checkout_form .form_inner_sec select:focus {
+    outline: none !important;
+    box-shadow: none;
+}
+
+.checkout_form .form_inner_sec label {
+    color: var(--h-tx-color);
+}
+
+.checkout_form .form_inner_sec .form_heading {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+    color: var(--h-tx-color);
+}
+
+.checkout_form .form_inner_sec .pt_buttom {
+    padding-top: 4.1rem;
+}
+
+.checkout_form .form_inner_sec .person_nfo {
+    font-weight: bold;
+    padding-top: -14px;
+    color: var(--h-tx-color);
+}
+
+.checkout_form .form_inner_sec .contact {
+    padding-top: 38px;
+    font-weight: bold;
+    color: var(--h-tx-color);
+}
+
+.checkout_form .form_inner_sec .address {
+    padding-top: 43px;
+    display: block;
+    font-weight: bold;
+    color: var(--h-tx-color);
+}
+
+.checkout_form .form_inner_sec .profile {
+    color: var(--h-tx-color);
+    font-weight: bold;
+    width: 200px;
+}
+
+.checkout_form .form_inner_sec .munis_btn {
+    border: none;
+    background: transparent;
+}
+
+.checkout_form .form_inner_sec .munis_btn .icon i {
+    color: var(--h-tx-color);
+    font-size: 18px;
+}
+
+.checkout_form input[type=file]::-webkit-file-upload-button {
+    visibility: hidden;
+    color: transparent;
+}
+
+.checkout_form input[type=file] {
+    color: transparent;
+    cursor: pointer;
+}
+
+.checkout_form input[type=file]:focus {
+    color: transparent !important;
+}
+
+.checkout_form .info_icon {
+    color: var(--h-tx-color);
+    padding: 0 0 15px 0;
+    font-size: 16px;
+    display: block;
+}
+
+.checkout_form .form_inner_sec .drug_file {
+    position: relative;
+}
+
+.checkout_form .form_inner_sec .drug_file input[type=file] {
+    padding: 120px 0 85px 35%;
+    background-color: var(--snd-brd-color);
+    position: relative;
+}
+
+.checkout_form .form_inner_sec .large_file_upload {
+    position: relative;
+}
+
+.checkout_form .form_inner_sec .large_file_upload input[type=file] {
+    padding: 120px 0 85px 35%;
+    background-color: var(--snd-brd-color);
+    position: relative;
+    color: transparent;
+}
+
+.drop_upload {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    color: var(--h-tx-color);
+    letter-spacing: 0.6px;
+    font-size: 14px;
+    font-weight: bold;
+    width: 100%;
+    transition: 0.1s all;
+}
+
+.drop_upload:hover {
+    color: #0d0d0dab;
+}
+
+.or_upload {
+    text-decoration: underline;
+}
+
+.icon_ff {
+    font-size: 25px;
+}
+
+.ducoment_reds {
+    position: relative;
+}
+
+
+/* .checkout_form .form_inner_sec .large_file_upload input[type=file]:before {
+    content: "";
+    position: absolute;
+    left: 37%;
+    top: 20px;
+    background-image: url(assets/img/Group.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+} */
+
+.checkout_form .form_inner_sec .document_file_upload input[type=file] {
+    position: relative;
+    background-color: var(--snd-brd-color);
+    padding: 15px 0;
+    margin-top: 20px;
+}
+
+.checkout_form .buttom_section {
+    position: absolute;
+    bottom: 0px;
+    left: 0%;
+    background: #fff;
+    padding-bottom: 35px;
+}
+
+.checkout_form .preview {
+    background-color: #fff;
+    border: 1px solid #1B1E24 !important;
+    border-radius: 50px;
+    padding: 8px 35px !important;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #1B1E24;
+    margin-right: 20px;
+}
+
+.checkout_form .save {
+    padding: 10px 30px !important;
+    border-radius: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background: #8D939E;
+    border: none !important;
+}
